@@ -1,0 +1,25 @@
+.button {float:right;
+padding:5px;
+background-color:white;
+border:5px solid black;}
+
+.link {padding:5px;
+background-color:white;
+border:5px solid black;}
+
+.home {float:left;
+padding:5px;
+background-color:white;
+border:5px solid black;}
+
+p {color:white;}
+
+.titles {float:center;}
+
+body {background-color:black;}
+
+textarea {height:50%; width:100%; color:white; background-color:black;}
+
+h1 {float:left; color:white;}
+
+input{background-color:white;}
