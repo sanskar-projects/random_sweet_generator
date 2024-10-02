@@ -1,0 +1,55 @@
+<html>
+<head>
+<link rel="stylesheet" href="CSS.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<script>
+const f_array=['Adhirasam','Bal mithai','Barfi','Chhena murki','Chhena poda','Chikki','Chomchom','Gajar Pak or Gajrela','Gulab jamun','Jalebi','Imarti','Kesari bhath','Khaja','Kheer','Phirni','Payasam','Kozhukatta','Kulfi','Laddu','Malpua','Pathishapta','Pongal','Rasgulla','Ras malai','Sandesh','Sel roti','Shrikhand','Soan papdi','Tiler Khaja','Mysore pak','Halwa','Jangiri','Jhajariya','Dharwad pedha','Karadantu'];
+m_array.sort();
+f_array.sort();
+var f="";
+const pre="https://www.google.com/search?q=";
+function f_main()
+{
+const n=f_array.length;
+const r=Math.floor(Math.random()*n);
+const s=f_array[r];
+document.getElementById("f_id").innerHTML=r+1+". "+s;
+f=s;
+}
+function f_direct()
+{
+window.location.assign(pre+f);
+}
+function print()
+{
+let y="";
+for(let i=0;i<f_array.length;i++)
+{
+y+=i+1+". "+f_array[i]+"<br>";
+}
+document.getElementById("f_view").innerHTML="Female Celebrities<br>sort: ascending<br>count: "+f_array.length+"<br>"+y;
+}
+</script>
+</head>
+<body>
+<p class="home">
+<a href="index.html">
+go to home
+</a>
+</p>
+<br><br><br><br><br>
+<h1>Random Sweet Generator</h1>
+<br><br><br><br><br>
+<hr><br>
+<p>Sweet</p>
+<br>
+<p id="f_id">No Sweet Selected</p>
+<br>
+<button type="button" onclick="f_main();">Generate</button>
+<button type="button" onclick="f_direct();">About</button>
+<hr>
+<button type="button" onclick="print();">View Complete Dataset</button>
+<br>
+<p id="f_view"></p>
+</body>
+</html>
