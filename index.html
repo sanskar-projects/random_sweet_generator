@@ -6,20 +6,14 @@
 const f_array=['Adhirasam','Bal mithai','Barfi','Chhena murki','Chhena poda','Chikki','Chomchom','Gajar Pak or Gajrela','Gulab jamun','Jalebi','Imarti','Kesari bhath','Khaja','Kheer','Phirni','Payasam','Kozhukatta','Kulfi','Laddu','Malpua','Pathishapta','Pongal','Rasgulla','Ras malai','Sandesh','Sel roti','Shrikhand','Soan papdi','Tiler Khaja','Mysore pak','Halwa','Jangiri','Jhajariya','Dharwad pedha','Karadantu'];
 m_array.sort();
 f_array.sort();
-var f="";
 const pre="https://www.google.com/search?q=";
 function f_main()
 {
 const n=f_array.length;
 const r=Math.floor(Math.random()*n);
 const s=f_array[r];
-document.getElementById("f_id").href=s;
 document.getElementById("f_id").innerHTML=r+1+". "+s;
-f=s;
-}
-function f_direct()
-{
-window.location.assign(pre+f+"(sweet)");
+document.getElementById("about").href=pre+s+"(sweet)";
 }
 function print()
 {
@@ -47,7 +41,7 @@ go to home
 <p id="f_id">No Sweet Selected</p>
 <br>
 <button type="button" onclick="f_main();">Generate</button>
-<button type="button" onclick="f_direct();">About</button>
+<a id="about"><button type="button" onclick="f_direct();">About</button></a>
 <hr>
 <button type="button" onclick="print();">View Complete Dataset</button>
 <br>
